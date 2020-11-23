@@ -1,0 +1,160 @@
+* {
+/* width: 1820px; */
+margin: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+a {
+    color: #888888;
+    transition: 0.5s;
+    margin-right: 28px;
+    cursor: pointer;
+    font-size: 13px;
+}
+a:hover {
+    color: black;
+    
+    text-decoration: none;
+}
+
+.menu-logo {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 22px;
+}
+.icon svg {
+    transition: 0.3s;
+}
+svg:hover {
+    scale: 0.5;
+    color: red;
+}
+
+.heart-group, .cart-group {
+    position: relative;
+}
+.heart-circle, .cart-circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    top: 0px;
+    left: 9px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* banner */
+
+.img-banner {
+    height: 670px;
+    background-color: #f5f5f5;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-banner {
+    width: 492px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+   text-align: center;
+}
+
+.detail-banner-title {
+    margin-top: 20px;
+}
+.detail-banner-title, .detail-banner-content {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.detail-banner-content, .detail-banner-shopping, .product-shopping {
+    color: #aaaaaa;
+    transition: 0.3s;
+}
+
+.detail-banner-shopping:hover {
+    cursor: pointer;
+    color: red;
+    padding-left: 10px;
+}
+
+/* product */
+.product-list {
+    margin-top: 36px;
+}
+.product-menu {
+    background-color: #f5f5f5;
+}
+
+.product-img img {
+    width: 80%;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0px 0px 20px;
+}
+
+.product-shopping {
+    font-size: 16px;
+    margin: 10px 0px 0px 20px;
+}
+
+.product-shopping:hover {
+    padding-left: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+/* content */
+.shopping-text {
+    text-align: center;
+}
+.shopping-text-title, .must-season-title p {
+    font-size: 28px;
+    font-weight: bold;
+}
+.happy-shopping {
+    margin-top: 140px;
+}
+
+.shopping-video {
+    margin-top: 50px;
+}
+.shopping-video img {
+    width: 100%;
+}
+
+.must-season {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.must-season-grid .col-12 .col-md-3 {
+    background-color: #aaaaaa;
+}
