@@ -11,8 +11,19 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    position: relative;
 }
+ .logo {
+     position: relative;
+     text-align: center;
+     top:-20px;
+     width: 300px;
+     left: 40%;
+ }
 
+ h2 {
+     margin-bottom: 0px;
+ }
 
 a {
     color: #888888;
@@ -68,15 +79,18 @@ svg:hover {
 /* banner */
 
 .img-banner {
-    height: 670px;
-    background-color: #f5f5f5;
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: url("img/banner.png"); */
+}
+
+.img-banner img {
+    width: 100%;
 }
 
 .detail-banner {
+    position: absolute;
     width: 492px;
     height: 150px;
     background-color: rgb(255, 255, 255);
@@ -111,7 +125,7 @@ svg:hover {
 }
 
 .product-img img {
-    width: 80%;
+    width: 100%;
 }
 
 .product-title {
@@ -155,6 +169,146 @@ svg:hover {
     text-align: center;
 }
 
-.must-season-grid .col-12 .col-md-3 {
-    background-color: #aaaaaa;
+.must-season-grid {
+    margin-top: 30px;
 }
+
+.must-season-grid img {
+    width: 100%;
+}
+
+.season-product:hover{
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.season-product {
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.season-detail {
+    text-align: left;
+}
+.season-title {
+    font-weight: bold;
+    font-size: 13px;
+}
+.season-price {
+color: red;
+font-weight: bold;
+}
+
+.season-star img {
+    width: 10px;
+}
+
+.season-star {
+    display: flex;
+    align-items: center;
+}
+
+.must-season-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.season-more:hover{
+    box-shadow: 0px 0px 10px 0px;
+    border:none;
+}
+.season-more {
+    border: 1px solid black;
+    height: 45px;
+    width: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.content {
+    margin-top: 140px;
+}
+
+.content-logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content-help {
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.col-md-2 p {
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.col-md-2 p:hover {
+    color: red;
+    padding-left: 5px;
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    /* height: 146px; */
+    background-color: #f5f5f5;
+    color: #888888;
+    font-size: 13px;
+}
+
+.footer-detail {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-email {
+    height: 40px;
+    border-bottom: 1px solid black;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+input {
+    border: none;
+    background-color: #f5f5f5;
+    width: 93%;
+}
+
+.mxh {
+    display: flex;
+    align-items: center;
+}
+
+.mxh p {
+    margin-left: 5px;
+}
+
+.mxh p:hover {
+    padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .menu-list, .menu-icon{
+        display: none;
+    }
+    .logo {
+        position: none;
+        text-align: center;
+        top:0px;
+        width: 100%;
+        left: 0px;
+    }
+    .detail-banner {
+        width: 100%;
+    }
+    .img-banner{
+        display: none;
+    }
+  }
