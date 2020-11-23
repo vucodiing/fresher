@@ -12,13 +12,13 @@ header {
     justify-content: space-between;
     margin-top: 40px;
     position: relative;
+    z-index: 2;
 }
  .logo {
      position: relative;
      text-align: center;
      top:-20px;
-     width: 300px;
-     left: 40%;
+     z-index: 1;
  }
 
  h2 {
@@ -311,4 +311,10 @@ input {
     .img-banner{
         display: none;
     }
+  }
+
+  @media (max-width: 1024px) {
+      a {
+          margin-right: 7px;
+      }
   }
