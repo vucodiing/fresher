@@ -1,0 +1,228 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin text-style($color, $weight) {
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin hover {
+  color: $red;
+  cursor: pointer;
+}
+// set time hover
+$s3: 0.3s;
+$red: #ff0000;
+$grey: #dddddd;
+$black: #000000;
+* {
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 30px;
+}
+#desktop {
+  .desktop-menu {
+    padding-left: 0;
+    list-style: none;
+    justify-content: flex-start;
+    @include center;
+    a {
+      @include text-style($black, bold);
+      transition: $s3;
+      padding-right: 26px;
+    }
+    & a:hover {
+      @include hover();
+      text-decoration: none;
+      transform: scale(1.1);
+    }
+  }
+  .nav-icon {
+    justify-content: flex-end;
+    @include center;
+    .nav-icon-list {
+      position: relative;
+      padding-left: 22px;
+      transition: $s3;
+      .nav-icon-circle {
+        position: absolute;
+        top: 0px;
+        left: 30px;
+        font-size: 10px;
+        color: white;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $red;
+        text-align: center;
+      }
+      &:hover {
+        @include hover;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+#banner {
+  .banner-group {
+    position: relative;
+    .banner-img {
+      img {
+        width: 100%;
+      }
+    }
+    .banner-info {
+      background-color: white;
+      position: absolute;
+      padding: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      .banner-info-black {
+        font-size: 28px;
+        @include text-style($black, bold);
+      }
+      .banner-info-grey {
+        font-size: 28px;
+        @include text-style($grey, bold);
+      }
+      .banner-info-shop {
+        font-size: 22px;
+        @include text-style($grey, 400);
+        transition: $s3;
+        &:hover {
+          @include hover();
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+#element-select {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  .item-select {
+    position: relative;
+    .select-title {
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      z-index: 2;
+      .select-title-name {
+        font-size: 20px;
+        @include text-style($black, bold);
+        transition: $s3;
+        &:hover {
+          @include hover();
+        }
+      }
+      .select-title-shop {
+        font-size: 18px;
+        @include text-style($black, 400);
+
+        a {
+          color: $black;
+          text-decoration: none;
+          transition: $s3;
+          &:hover {
+            @include hover();
+            padding-left: 8px;
+            &::after {
+              content: " \276F\276F";
+            }
+          }
+        }
+      }
+    }
+    .select-img {
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: $s3;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+#happy-season {
+  margin-top: 115px;
+  .season-text {
+    text-align: center;
+    .season-text-title {
+      font-size: 28px;
+      @include text-style($black, bold);
+    }
+    .season-text-content {
+      font-size: 18px;
+      @include text-style($black, 400);
+      margin: 10px 0px;
+    }
+  }
+  .season-video {
+    margin-top: 10px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#products {
+  margin-top: 140px;
+  .products-title {
+    text-align: center;
+    .products-title-text {
+      font-size: 28px;
+      @include text-style($black, bold);
+      @extend .season-text-title;
+    }
+    .products-title-content {
+      font-size: 18px;
+      @include text-style($black, 400);
+      margin: 10px 0px;
+    }
+  }
+  .products-list {
+    .products-item {
+      position: relative;
+      text-align: center;
+      .product-caption {
+        font-size: 16px;
+        @include text-style($grey, 400);
+        transition: $s3;
+        &:hover {
+          @include hover();
+        }
+      }
+      .product-name {
+        font-size: 14px;
+        @include text-style($black, bold);
+        transition: $s3;
+        &:hover {
+          @include hover();
+        }
+      }
+      .product-star {
+        @include center();
+        justify-content: center;
+        img {
+          width: 14px;
+          padding-right: 3px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

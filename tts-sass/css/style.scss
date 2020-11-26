@@ -1,0 +1,63 @@
+$bgRed: #ff0000;
+$bg-aqua: #00ffff;
+$bg-w: #ffe4c4;
+$bg-blue: #0000ff;
+$bg-yellow: #ffff00;
+
+@mixin fontStyle($style, $weight) {
+  font-style: $style;
+  font-weight: $weight;
+}
+.box1 {
+  position: relative;
+}
+.box1 {
+  .box11 {
+    width: 100px;
+    height: 100px;
+    background-color: $bgRed;
+  }
+  .box11-1 {
+    width: 50px;
+    height: 50px;
+    background-color: $bg-aqua;
+    p {
+      font-weight: bold;
+    }
+  }
+
+  .box11-2 {
+    width: 30px;
+    height: 30px;
+    background-color: $bg-w;
+    p {
+      @include fontStyle(italic, 900);
+    }
+  }
+
+  .box12 {
+    width: 200px;
+    height: 200px;
+    background-color: $bg-blue;
+  }
+
+  .box13 {
+    width: 300px;
+    height: 300px;
+    background-color: $bg-yellow;
+    .box13-2 {
+      border: 1px solid red;
+      @extend .box11-2;
+    }
+  }
+}
+.box12-1{
+    color: #1f1f63;
+    font-weight: bold;
+    p{
+        color: #5f5f2c;
+    }
+    & p:hover{
+        color: #ff0000;
+    }
+}

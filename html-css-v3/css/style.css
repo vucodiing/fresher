@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box; }
+
+header {
+  margin-top: 30px; }
+
+#desktop .desktop-menu {
+  padding-left: 0;
+  list-style: none;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center; }
+  #desktop .desktop-menu a {
+    color: #000000;
+    font-weight: bold;
+    transition: 0.3s;
+    padding-right: 26px; }
+  #desktop .desktop-menu a:hover {
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: none;
+    transform: scale(1.1); }
+#desktop .nav-icon {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center; }
+  #desktop .nav-icon .nav-icon-list {
+    position: relative;
+    padding-left: 22px;
+    transition: 0.3s; }
+    #desktop .nav-icon .nav-icon-list .nav-icon-circle {
+      position: absolute;
+      top: 0px;
+      left: 30px;
+      font-size: 10px;
+      color: white;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #ff0000;
+      text-align: center; }
+    #desktop .nav-icon .nav-icon-list:hover {
+      color: #ff0000;
+      cursor: pointer;
+      transform: scale(1.1); }
+
+#banner .banner-group {
+  position: relative; }
+  #banner .banner-group .banner-img img {
+    width: 100%; }
+  #banner .banner-group .banner-info {
+    background-color: white;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #banner .banner-group .banner-info .banner-info-black {
+      font-size: 28px;
+      color: #000000;
+      font-weight: bold; }
+    #banner .banner-group .banner-info .banner-info-grey {
+      font-size: 28px;
+      color: #dddddd;
+      font-weight: bold; }
+    #banner .banner-group .banner-info .banner-info-shop {
+      font-size: 22px;
+      color: #dddddd;
+      font-weight: 400;
+      transition: 0.3s; }
+      #banner .banner-group .banner-info .banner-info-shop:hover {
+        color: #ff0000;
+        cursor: pointer;
+        padding-left: 8px; }
+
+#element-select {
+  margin-top: 30px;
+  margin-bottom: 15px; }
+  #element-select .item-select {
+    position: relative; }
+    #element-select .item-select .select-title {
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      z-index: 2; }
+      #element-select .item-select .select-title .select-title-name {
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        transition: 0.3s; }
+        #element-select .item-select .select-title .select-title-name:hover {
+          color: #ff0000;
+          cursor: pointer; }
+      #element-select .item-select .select-title .select-title-shop {
+        font-size: 18px;
+        color: #000000;
+        font-weight: 400; }
+        #element-select .item-select .select-title .select-title-shop a {
+          color: #000000;
+          text-decoration: none;
+          transition: 0.3s; }
+          #element-select .item-select .select-title .select-title-shop a:hover {
+            color: #ff0000;
+            cursor: pointer;
+            padding-left: 8px; }
+            #element-select .item-select .select-title .select-title-shop a:hover::after {
+              content: " \276F\276F"; }
+    #element-select .item-select .select-img {
+      overflow: hidden; }
+      #element-select .item-select .select-img img {
+        width: 100%;
+        transition: 0.3s; }
+        #element-select .item-select .select-img img:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+
+#happy-season {
+  margin-top: 115px; }
+  #happy-season .season-text {
+    text-align: center; }
+    #happy-season .season-text .season-text-title, #happy-season .season-text #products .products-title .products-title-text, #products .products-title #happy-season .season-text .products-title-text {
+      font-size: 28px;
+      color: #000000;
+      font-weight: bold; }
+    #happy-season .season-text .season-text-content {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 400;
+      margin: 10px 0px; }
+  #happy-season .season-video {
+    margin-top: 10px; }
+    #happy-season .season-video img {
+      width: 100%; }
+
+#products {
+  margin-top: 140px; }
+  #products .products-title {
+    text-align: center; }
+    #products .products-title .products-title-text {
+      font-size: 28px;
+      color: #000000;
+      font-weight: bold; }
+    #products .products-title .products-title-content {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 400;
+      margin: 10px 0px; }
+  #products .products-list .products-item {
+    position: relative;
+    text-align: center; }
+    #products .products-list .products-item .product-caption {
+      font-size: 16px;
+      color: #dddddd;
+      font-weight: 400;
+      transition: 0.3s; }
+      #products .products-list .products-item .product-caption:hover {
+        color: #ff0000;
+        cursor: pointer; }
+    #products .products-list .products-item .product-name {
+      font-size: 14px;
+      color: #000000;
+      font-weight: bold;
+      transition: 0.3s; }
+      #products .products-list .products-item .product-name:hover {
+        color: #ff0000;
+        cursor: pointer; }
+    #products .products-list .products-item .product-star {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #products .products-list .products-item .product-star img {
+        width: 14px;
+        padding-right: 3px; }
+    #products .products-list .products-item img {
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
